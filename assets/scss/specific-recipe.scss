@@ -1,0 +1,95 @@
+.spec{
+  &__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+  &__subtitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 155.7%;
+  }
+  &-dop-info{
+    width: max-content;
+    display: flex;
+    margin: 0 auto 75px;
+
+    &__item{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      margin: 0 40px 0 0;
+
+      &:last-child{
+        margin-right:0;
+      }
+    }
+  }
+  &-description{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    margin-bottom: 75px;
+    &__img{
+      border-radius: 10px;
+      width: 400px;
+    }
+    &__text{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+  }
+  &-ingr{
+    margin-bottom: 75px;
+    &-items{
+      width: 60%;
+      display: flex;
+      align-items: flex-end;
+      &:not(&:last-child){
+        margin-bottom: 20px;
+      }
+      &__line{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2px;
+      }
+      &__name{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 155.7%;
+        margin: 0;
+        white-space: nowrap;
+      }
+      &__value{
+        width: max-content;
+        margin: 0;
+        white-space: nowrap;
+      }
+    }
+  }
+  &-instruction{
+    &-item{
+      display: flex;
+      align-items: center;
+      &:not(&:last-child){
+        margin-bottom: 60px;
+      }
+      &__image{
+        border-radius: 10px;
+        width: 25%;
+        margin-right: 50px;
+      }
+      &__text{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 155.7%;
+        width: 60%;
+      }
+    }
+  }
+}
