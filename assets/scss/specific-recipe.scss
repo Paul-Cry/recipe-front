@@ -4,6 +4,7 @@
     font-size: 32px;
     line-height: 40px;
     text-align: center;
+    margin-top: 40px;
   }
   &__subtitle{
     font-style: normal;
@@ -91,5 +92,16 @@
         width: 60%;
       }
     }
+  }
+}
+
+.recipes {
+  &-row__back{
+    transform: rotate(90deg);
+    width: 25px;
+    height: auto;
+    position: absolute;
+    left: 3%;
+    top: 40px;
   }
 }

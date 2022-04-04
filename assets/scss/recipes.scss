@@ -1,49 +1,53 @@
-.recipes{
-  &__title{
+.recipes {
+  position: relative;
+  
+  &__title {
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
     line-height: 35px;
     text-align: center;
+    padding-top: 40px;
   }
-  &-info{
+  &-info {
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
+    margin-bottom: 60px;
   }
-  &-card{
+  &-card {
     padding-bottom: 20px;
     position: relative;
     border: 1px solid $border-color;
     width: max-content;
     border-radius: 10px;
     margin: 0 auto;
-    &__title{
+    &__title {
       padding-left: 14px;
       cursor: pointer;
       width: max-content;
       margin: 3px 0;
     }
-    &__link{
+    &__link {
       color: inherit;
       text-decoration: none;
     }
-    &-item{
+    &-item {
       margin: 0;
-      &:first-child:not(&.right-bottom){
+      &:first-child:not(&.right-bottom) {
         margin-bottom: 5px;
       }
-      &.right-bottom{
+      &.right-bottom {
         position: absolute;
         bottom: 2%;
         right: 5%;
       }
     }
-    &-info{
+    &-info {
       padding-left: 14px;
     }
   }
-  &-cards{
+  &-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
@@ -51,7 +55,7 @@
     //flex-wrap: wrap;
     //justify-content: space-between;
   }
-  &__img{
+  &__img {
     border-radius: 10px 10px 0px 0px;
     width: 300px;
     height: auto;

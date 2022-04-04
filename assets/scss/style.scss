@@ -3,6 +3,7 @@
 @import './assets/scss/sign.scss';
 @import './assets/scss/recipes.scss';
 @import './assets/scss/specific-recipe.scss';
+@import './assets/scss/collect.scss';
 
 
 @font-face {
@@ -59,6 +60,18 @@ hr{
   height: 1px;
   color: $border-color;
   background-color: $border-color;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+input{
+  outline: none;
+  border: none;
+  border: 1px solid $border-color;
+  border-radius: 4px;
 }
 
 

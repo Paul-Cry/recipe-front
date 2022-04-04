@@ -6,6 +6,7 @@
     <p class="spec-dop-info__item">5 ингрединетов</p>
     <p class="spec-dop-info__item">30 мин</p>
   </div>
+  <nuxt-link to="recipes"><img src="/img/arrow-icon.svg" alt="" class="recipes-row__back"></nuxt-link>
   <div class="spec-description">
     <img src="/img/spec-image.png" alt="" class="spec-description__img">
     <p class="spec-description__text">
@@ -14,7 +15,7 @@
       с начинкой — сухофрукты, орехи, свежие фрукты и даже картофель лишними не будут.
     </p>
   </div>
-  <div class="spec-ingr">
+  <div class="spec-ingr"> 
     <h4 class="spec__subtitle">ИНГРЕДИЕНТЫ</h4>
     <div class="spec-ingr-content">
       <spec-ingr-items></spec-ingr-items>
