@@ -1,4 +1,36 @@
 .list {
+  &-ing-wrapper{
+    height: 100vh;
+    position: relative;
+  }
+  &.countre{
+    height: 70vh;
+  }
+  &.love{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    .list-stocks{
+      margin-top: 10px;
+    }
+    .list-last{
+      &-item{
+        &s{
+          margin-bottom: 40px;
+        }
+        &:not(&:last-child){
+          margin-bottom: 10px;
+        }
+      }
+      &__text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+  }
   background: $main-plash;
   box-shadow: $shadow;
   border-radius: 10px;
@@ -12,6 +44,19 @@
   top: 50%;
   margin: 0 auto;
   transform: translateY(-50%);
+  &-value{
+    display: flex;
+    align-items: center;
+    &__text{
+      margin: 0 20px;
+    }
+    &__button{
+      border: none;
+      background: transparent;
+      font-size: 22px;
+    }
+
+  }
   &-ingredient-points {
     position: absolute;
     left: 30px;
@@ -28,7 +73,7 @@
       &.active{
         color: #7d7d7d !important;
       }
-    } 
+    }
   }
   &-content {
     padding-top: 34px;
@@ -38,7 +83,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
-    width: max-content;
+
   }
   &__text {
     font-style: normal;
@@ -103,6 +148,10 @@
       background-color: #000000;
       border: 2px solid #555555;
     }
+    &.countre{
+      overflow: auto;
+      max-height: max-content;
+    }
     &-item {
       display: flex;
       justify-content: space-between;
@@ -115,6 +164,9 @@
       }
       &__name {
         margin: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
       }
       &__delete {
         cursor: pointer;
@@ -127,5 +179,44 @@
     margin: 0 auto;
     margin-left: 50%;
     transform: translateX(-50%);
+    &.countre{
+      position: absolute;
+      bottom: 30px;
+      width: 40%;
+      left: 0;
+      right: 0;
+      maring: 0 auto;
+      &-buttons{
+
+      }
+    }
+
   }
+}
+
+.countre-buttons{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 90%;
+  bottom: 5%;
+
+}
+.countre__button{
+  min-width: 172px;
+  margin: 0 !important;
+}
+
+
+@media screen and (max-width:1600px){
+      .list{
+        padding: 15px 20px;
+        &-stocks{
+          max-height: 200px;
+        }
+        &-ings{
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+      }
 }
