@@ -14,9 +14,13 @@
               <input class='input__item form-item__input' type="text" id="password" />
             </div>
           </div>
-          <button class="form__button button button__signin">
-            <nuxt-link to="/collect/list-ingredient"> Войти</nuxt-link>
-          </button>
+
+            <nuxt-link to="/collect/list-ingredient">
+              <button class="form__button button button__signin">
+                Войти
+              </button>
+            </nuxt-link>
+
         </form>
         <div class="additional">
           <p class="additional__password">Забыли пароль?</p>

@@ -23,9 +23,12 @@
               <input class='input__item form-item__input' type="text" id="repassword" />
             </div>
           </div>
-          <button class="form__button button">
-            <nuxt-link to="/collect/list-ingredient">Создать личный аккаунт</nuxt-link>
-          </button>
+            <nuxt-link to="/collect/list-ingredient">
+              <button class="form__button button">
+                Создать личный аккаунт
+              </button>
+            </nuxt-link>
+
         </form>
       </section>
     </div>
