@@ -24,7 +24,7 @@
             </div>
           </div>
           <button class="form__button button">
-            <nuxt-link to="/recipes">Создать личный аккаунт</nuxt-link>
+            <nuxt-link to="/collect/list-ingredient">Создать личный аккаунт</nuxt-link>
           </button>
         </form>
       </section>

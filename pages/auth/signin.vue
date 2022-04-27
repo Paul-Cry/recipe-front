@@ -15,7 +15,7 @@
             </div>
           </div>
           <button class="form__button button button__signin">
-            <nuxt-link to="/recipes"> Войти</nuxt-link>
+            <nuxt-link to="/collect/list-ingredient"> Войти</nuxt-link>
           </button>
         </form>
         <div class="additional">

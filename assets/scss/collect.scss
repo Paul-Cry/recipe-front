@@ -65,13 +65,13 @@
     &__item {
       width: 15px;
       height: 15px;
-      background-color: $border-color;
+      background-color: $points;
       border-radius: 50%;
       &:not(&:last-child) {
         margin-right: 10px;
       }
       &.active{
-        color: #7d7d7d !important;
+        background-color: $points_active ;
       }
     }
   }
@@ -207,6 +207,22 @@
   margin: 0 !important;
 }
 
+.list-ingredient-points.mobil{
+  display: none;
+}
+
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 
 @media screen and (max-width:1600px){
       .list{
@@ -219,4 +235,66 @@
           margin-bottom: 20px;
         }
       }
+}
+
+@media screen and (max-width:500px){
+  .list-ingredient-points{
+    display: none;
+  }
+  .form-content.signin{
+    margin-bottom: 20px;
+  }
+  .list-ingredient-points.mobil{
+    display: flex;
+    left: 20px;
+    top: 15px;
+  }
+
+  .list{
+    min-width: 80vw;
+    &-stocks{
+      max-height: 180px;
+    }
+    &.countre{
+      .button{
+        padding: 14px 20px;
+        min-width: 144px;
+      }
+    }
+    &.love{
+      transform: translateY(0);
+      top: 5%;
+      height: max-content;
+    }
+    &__title{
+      padding-top: 10px;
+    }
+    &-ingredient-points__item{
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .container{
+    overflow-x: hidden;
+  }
+  .list-ingredient{
+    .list-search-input__item{
+      width: 85%;
+    }
+    .list-stock{
+      padding: 0;
+    }
+  }
+
+  .additional{
+    &__password{
+      color:$button-clr;
+      margin: 0;
+      cursor: pointer;
+      &:not(&:last-child){
+        margin-bottom: 20px;
+      }
+    }
+  }
+
 }
